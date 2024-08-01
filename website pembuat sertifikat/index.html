@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Brittany" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="1647133180257.jpg" alt="alhazen Logo">
+        <h4>Get your certificate of subscription to</h4>
+        <h1><a href="https://www.youtube.com/@alhazenacademy" target="_blank" rel="noopener noreferrer">Alhazen Academy</a></h1>
+    </header>
+    <main>
+        <h1>Certificate Generator</h1>
+        <label for="imageUpload">Upload Certificate Template</label>
+        <input type="file" id="imageUpload" accept="image/*">
+        <label for="participantName">Type Your Name</label>
+        <input type="text" id="participantName" placeholder="Enter participant name" minlength="3" maxlength="16" required>
+        <label for="certificateNumber">Type Certificate Number</label>
+        <input type="text" id="certificateNumber" placeholder="Enter certificate number" required>
+        <button id="generateBtn">Generate Certificate</button>
+        <canvas id="certificateCanvas" style="display: none;"></canvas>
+        <a id="downloadLink" style="display:none;">Download Certificate</a>
+    </main>
+    <script src="https://unpkg.com/pdf-lib@1.4.0"></script>
+    <script src="https://unpkg.com/@pdf-lib/fontkit@0.0.4"></script>
+    <script src="index.js"></script>
+</body>
+</html>
